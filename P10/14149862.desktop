@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Start Nexus Network
+Comment=Run nexus-network with node ID 14149862
+Exec=gnome-terminal -- bash -c "nexus-network start --node-id 14149862; exec bash"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
