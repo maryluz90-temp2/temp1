@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Setup and Run Datagram CLI
-Comment=Download datagram-cli, set permissions, and run with key
-Exec=gnome-terminal -- bash -c "sudo wget https://github.com/Datagram-Group/datagram-cli-release/releases/latest/download/datagram-cli-x86_64-linux -O /usr/local/bin/datagram-cli && sudo chmod +x /usr/local/bin/datagram-cli && mkdir -p \"$HOME/tmp\" && TMPDIR=\"$HOME/tmp\" datagram-cli run -- --key b4c130373bf0dc471b284c8555439b83; exec bash"
-Icon=utilities-terminal
-Terminal=true
-Type=Application
